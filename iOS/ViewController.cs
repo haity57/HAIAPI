@@ -1,6 +1,8 @@
 ﻿using System;
 
+using System.Net;
 using UIKit;
+using Newtonsoft.Json.Linq;
 
 namespace RestaurantsAPI.iOS
 {
@@ -18,15 +20,19 @@ namespace RestaurantsAPI.iOS
 
             // Call API
             Restaurants restaurants = new Restaurants();
-            string test = restaurants.getRestaurantsByCoordinates(35.6915, 139.7081).ToString();
+            JObject test = restaurants.getRestaurantsByCoordinates(35.6915, 139.7081);
 
             // Perform any additional setup after loading the view, typically from a nib.
             Button.AccessibilityIdentifier = "myButton";
             Button.TouchUpInside += delegate
             {
                 var title = string.Format("{0} clicks!", count++);
-				// Button.SetTitle(title, UIControlState.Normal);
-                Button.SetTitle(test, UIControlState.Normal);
+                // Button.SetTitle(title, UIControlState.Normal);
+                for (int i = 0; i < test.Count; i++)
+                {
+                    Button.SetTitle(test["rest"][i]["name"].ToString(), UIControlState.Normal);
+                    break;
+                }
 			};
         }
 

@@ -29,8 +29,8 @@ namespace RestaurantsAPI
         public JObject getRestaurantsByCoordinates(double lati/* tude */, double longi/* tude */)
         {
 
-            string URL = ApiURL + "?keyid=" + keyid + "&format=json" + "&latitude=" + lati + "&longitude" + longi + "&range=5"; // Range = 1||2||3||4||5 500-3000m
-			string json = "";
+            string URL = ApiURL + "?keyid=" + keyid + "&format=json" + "&latitude=" + lati + "&longitude=" + longi + "&range=5"; // Range = 1||2||3||4||5 500-3000m
+            string json = string.Empty;
 
 			Task task = new Task(() =>
 			{
@@ -39,7 +39,7 @@ namespace RestaurantsAPI
 			task.Start();
 			task.Wait();
 
-			return JObject.Parse(json);
+            return JObject.Parse(json);
         }
 
 
