@@ -15,16 +15,16 @@ namespace RestaurantsAPI
         {
         }
 
-		private async Task<string> HttpGetAsync(string url)
-		{
-			HttpClient httpClient = new HttpClient();
+	private async Task<string> HttpGetAsync(string url)
+	{
+		HttpClient httpClient = new HttpClient();
 
-			Task<string> getStringTask = httpClient.GetStringAsync(url);
+		Task<string> getStringTask = httpClient.GetStringAsync(url);
 
-			string result = await getStringTask;
+		string result = await getStringTask;
 
-			return result;
-		}
+		return result;
+	}
 
         public JObject getRestaurantsByCoordinates(double lati/* tude */, double longi/* tude */)
         {
