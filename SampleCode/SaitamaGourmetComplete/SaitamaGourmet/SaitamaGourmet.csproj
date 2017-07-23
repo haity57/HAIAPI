@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.props" Condition="Exists('..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{6D59E0D9-0E49-41D3-B10F-99E5F4F4A470}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SaitamaGourmet</RootNamespace>
+    <AssemblyName>SaitamaGourmet</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision></CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>ecc87636-bb5b-4e0e-b28f-ce613fdb342b</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>26b83a57-f6ee-4a3a-8136-591b5951e3c4</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Maps">
+      <HintPath>..\packages\Xamarin.Google.iOS.Maps.2.1.0\lib\Xamarin.iOS10\Google.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="AnimatedShapeButton">
+      <HintPath>..\..\ekispert\Components\animatedshapebutton-1.0.0.2\lib\ios-unified\AnimatedShapeButton.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\BatopIconSize29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\BatopIconSize58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\BatopIconSize87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\BatopIconSize80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\BatopIconSize180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\BatopIconSize120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="MasterViewController.cs" />
+    <Compile Include="MasterViewController.designer.cs">
+      <DependentUpon>MasterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryViewController.cs" />
+    <Compile Include="CategoryViewController.designer.cs">
+      <DependentUpon>CategoryViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoumetNavi.cs" />
+    <Compile Include="GourmetNaviAPI.cs" />
+    <Compile Include="RestaurantMapViewController.cs" />
+    <Compile Include="RestaurantMapViewController.designer.cs">
+      <DependentUpon>RestaurantMapViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantListViewController.cs" />
+    <Compile Include="RestaurantListViewController.designer.cs">
+      <DependentUpon>RestaurantListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantTabViewController.cs" />
+    <Compile Include="RestaurantTabViewController.designer.cs">
+      <DependentUpon>RestaurantTabViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestDetailViewController.cs" />
+    <Compile Include="RestDetailViewController.designer.cs">
+      <DependentUpon>RestDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestDetailMapController.cs" />
+    <Compile Include="RestDetailMapController.designer.cs">
+      <DependentUpon>RestDetailMapController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestDetailTabViewController.cs" />
+    <Compile Include="RestDetailTabViewController.designer.cs">
+      <DependentUpon>RestDetailTabViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="json.net">
+      <Version>7.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="googleiosmaps">
+      <Version>2.1.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="animatedshapebutton">
+      <Version>1.0.0.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\01a.png" />
+    <BundleResource Include="Resources\02a.png" />
+    <BundleResource Include="Resources\03b.png" />
+    <BundleResource Include="Resources\04a.png" />
+    <BundleResource Include="Resources\05a.png" />
+    <BundleResource Include="Resources\06b.png" />
+    <BundleResource Include="Resources\07a.png" />
+    <BundleResource Include="Resources\08b.png" />
+    <BundleResource Include="Resources\09a.png" />
+    <BundleResource Include="Resources\10d.png" />
+    <BundleResource Include="Resources\11b.png" />
+    <BundleResource Include="Resources\12a.png" />
+    <BundleResource Include="Resources\13a.png" />
+    <BundleResource Include="Resources\14a.png" />
+    <BundleResource Include="Resources\15a.png" />
+    <BundleResource Include="Resources\16a.png" />
+    <BundleResource Include="Resources\17a.png" />
+    <BundleResource Include="Resources\18a.png" />
+    <BundleResource Include="Resources\19a.png" />
+    <BundleResource Include="Resources\20b.png" />
+    <BundleResource Include="Resources\21c.png" />
+    <BundleResource Include="Resources\22a.png" />
+    <BundleResource Include="Resources\noImege1.png" />
+    <BundleResource Include="Resources\noImage2.png" />
+    <BundleResource Include="Resources\op.png" />
+    <BundleResource Include="Resources\iconSample.png" />
+    <BundleResource Include="Resources\30call.png" />
+    <BundleResource Include="Resources\30good.png" />
+    <BundleResource Include="Resources\30train.png" />
+    <BundleResource Include="Resources\31map.png" />
+    <BundleResource Include="Resources\31palate.png" />
+    <BundleResource Include="Resources\32blackLine.gif" />
+    <BundleResource Include="Resources\noImage2BIG.png" />
+    <BundleResource Include="Resources\noImage2SMALL.png" />
+    <BundleResource Include="Resources\op3.png" />
+    <BundleResource Include="Resources\op4.png" />
+    <BundleResource Include="Resources\good2.png" />
+    <BundleResource Include="Resources\grayLine.gif" />
+    <BundleResource Include="Resources\powered_by_google_on_white.png" />
+    <BundleResource Include="Resources\like.png" />
+    <BundleResource Include="Resources\map.png" />
+    <BundleResource Include="Resources\mobile-phone.png" />
+    <BundleResource Include="Resources\train.png" />
+    <BundleResource Include="Resources\33good2.png" />
+    <BundleResource Include="Resources\33phone.png" />
+    <BundleResource Include="Resources\33train.png" />
+    <BundleResource Include="Resources\33good3.png" />
+    <BundleResource Include="Resources\33phone4.png" />
+    <BundleResource Include="Resources\34shop.png" />
+    <BundleResource Include="Resources\34shop2.png" />
+    <BundleResource Include="Resources\34go.png" />
+    <BundleResource Include="Resources\op6.png" />
+    <BundleResource Include="Resources\old-telephone-ringing-2.png" />
+    <BundleResource Include="Resources\phone.png" />
+    <BundleResource Include="Resources\telephone-2.png" />
+    <BundleResource Include="Resources\telephone.png" />
+    <BundleResource Include="Resources\phone-book-2.png" />
+    <BundleResource Include="Resources\phone-call.png" />
+    <BundleResource Include="Resources\BatopIconSize29.png" />
+    <BundleResource Include="Resources\BatopIconSize58.png" />
+    <BundleResource Include="Resources\BatopIconSize80.png" />
+    <BundleResource Include="Resources\BatopIconSize87.png" />
+    <BundleResource Include="Resources\BatopIconSize120.png" />
+    <BundleResource Include="Resources\BatopIconSize180.png" />
+    <BundleResource Include="Resources\BatopIconSize256.png" />
+    <BundleResource Include="Resources\op8.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.2.2\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\packages\Xamarin.Google.iOS.Maps.2.1.0\build\Xamarin.Google.iOS.Maps.targets" Condition="Exists('..\packages\Xamarin.Google.iOS.Maps.2.1.0\build\Xamarin.Google.iOS.Maps.targets')" />
+</Project>

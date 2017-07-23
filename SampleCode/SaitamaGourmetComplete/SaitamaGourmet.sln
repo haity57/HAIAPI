@@ -1,0 +1,75 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaitamaGourmet", "SaitamaGourmet\SaitamaGourmet.csproj", "{6D59E0D9-0E49-41D3-B10F-99E5F4F4A470}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D59E0D9-0E49-41D3-B10F-99E5F4F4A470}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{6D59E0D9-0E49-41D3-B10F-99E5F4F4A470}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{6D59E0D9-0E49-41D3-B10F-99E5F4F4A470}.Release|iPhone.ActiveCfg = Release|iPhone
+		{6D59E0D9-0E49-41D3-B10F-99E5F4F4A470}.Release|iPhone.Build.0 = Release|iPhone
+		{6D59E0D9-0E49-41D3-B10F-99E5F4F4A470}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{6D59E0D9-0E49-41D3-B10F-99E5F4F4A470}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{6D59E0D9-0E49-41D3-B10F-99E5F4F4A470}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{6D59E0D9-0E49-41D3-B10F-99E5F4F4A470}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.TextStylePolicy = $2
+		$2.inheritsSet = null
+		$2.scope = text/x-csharp
+		$0.XmlFormattingPolicy = $3
+		$3.inheritsSet = Mono
+		$3.scope = application/xml
+		$3.inheritsScope = application/xml
+		$0.CSharpFormattingPolicy = $4
+		$4.IndentSwitchSection = True
+		$4.NewLinesForBracesInProperties = True
+		$4.NewLinesForBracesInAccessors = True
+		$4.NewLinesForBracesInAnonymousMethods = True
+		$4.NewLinesForBracesInControlBlocks = True
+		$4.NewLinesForBracesInAnonymousTypes = True
+		$4.NewLinesForBracesInObjectCollectionArrayInitializers = True
+		$4.NewLinesForBracesInLambdaExpressionBody = True
+		$4.NewLineForElse = True
+		$4.NewLineForCatch = True
+		$4.NewLineForFinally = True
+		$4.NewLineForMembersInObjectInit = True
+		$4.NewLineForMembersInAnonymousTypes = True
+		$4.NewLineForClausesInQuery = True
+		$4.SpacingAfterMethodDeclarationName = False
+		$4.SpaceAfterMethodCallName = False
+		$4.SpaceBeforeOpenSquareBracket = False
+		$4.inheritsSet = Mono
+		$4.inheritsScope = text/x-csharp
+		$4.scope = text/x-csharp
+		$0.StandardHeader = $5
+		$5.Text = 
+		$5.IncludeInNewFiles = True
+		$0.NameConventionPolicy = $6
+		$6.Rules = $7
+		$7.NamingRule = $8
+		$8.Name = Type Parameters
+		$8.AffectedEntity = TypeParameter
+		$8.VisibilityMask = VisibilityMask
+		$8.NamingStyle = PascalCase
+		$8.IncludeInstanceMembers = True
+		$8.IncludeStaticEntities = True
+		$8.RequiredPrefixes = $9
+		$9.String = T
+		$8.RequiredSuffixes = $10
+		$10.String = Exception
+		$0.VersionControlPolicy = $11
+		$11.inheritsSet = Mono
+	EndGlobalSection
+EndGlobal

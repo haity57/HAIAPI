@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="op8.png">
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+        <simulatedOrientationMetrics key="orientation"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="01a.png" width="128" height="128"/>
+        <image name="02a.png" width="128" height="128"/>
+        <image name="03b.png" width="128" height="128"/>
+        <image name="04a.png" width="128" height="128"/>
+        <image name="05a.png" width="128" height="128"/>
+        <image name="06b.png" width="128" height="128"/>
+        <image name="07a.png" width="128" height="128"/>
+        <image name="08b.png" width="128" height="128"/>
+        <image name="09a.png" width="128" height="128"/>
+        <image name="10d.png" width="128" height="128"/>
+        <image name="11b.png" width="128" height="128"/>
+        <image name="12a.png" width="128" height="128"/>
+        <image name="13a.png" width="128" height="128"/>
+        <image name="14a.png" width="128" height="128"/>
+        <image name="15a.png" width="128" height="128"/>
+        <image name="16a.png" width="128" height="128"/>
+        <image name="17a.png" width="128" height="128"/>
+        <image name="18a.png" width="128" height="128"/>
+        <image name="19a.png" width="128" height="128"/>
+        <image name="20b.png" width="128" height="128"/>
+        <image name="21c.png" width="128" height="128"/>
+        <image name="22a.png" width="128" height="128"/>
+        <image name="noImege1.png" width="50" height="30"/>
+        <image name="noImage2.png" width="50" height="30"/>
+        <image name="op.png" width="375" height="667"/>
+        <image name="topIconSize87.png" width="87" height="87"/>
+        <image name="topIconSize80.png" width="80" height="80"/>
+        <image name="topIconSize58.png" width="58" height="58"/>
+        <image name="topIconSize29.png" width="29" height="29"/>
+        <image name="iconSample.png" width="16" height="16"/>
+        <image name="30call.png" width="16" height="16"/>
+        <image name="30good.png" width="16" height="16"/>
+        <image name="30train.png" width="16" height="16"/>
+        <image name="31map.png" width="32" height="32"/>
+        <image name="31palate.png" width="32" height="32"/>
+        <image name="32blackLine.gif" width="150" height="100"/>
+        <image name="noImage2BIG.png" width="375" height="262"/>
+        <image name="noImage2SMALL.png" width="95" height="95"/>
+        <image name="op3.png" width="375" height="667"/>
+        <image name="op4.png" width="375" height="667"/>
+        <image name="good2.png" width="16" height="16"/>
+        <image name="grayLine.gif" width="150" height="100"/>
+        <image name="powered_by_google_on_white.png" width="144" height="18"/>
+        <image name="like.png" width="24" height="24"/>
+        <image name="map.png" width="32" height="32"/>
+        <image name="mobile-phone.png" width="24" height="24"/>
+        <image name="train.png" width="24" height="24"/>
+        <image name="33good2.png" width="16" height="16"/>
+        <image name="33phone.png" width="256" height="256"/>
+        <image name="33train.png" width="48" height="48"/>
+        <image name="33good3.png" width="128" height="128"/>
+        <image name="33phone4.png" width="32" height="32"/>
+        <image name="34shop.png" width="32" height="32"/>
+        <image name="34shop2.png" width="32" height="32"/>
+        <image name="34go.png" width="32" height="32"/>
+        <image name="op6.png" width="375" height="667"/>
+        <image name="old-telephone-ringing-2.png" width="32" height="32"/>
+        <image name="phone.png" width="32" height="32"/>
+        <image name="telephone-2.png" width="32" height="32"/>
+        <image name="telephone.png" width="32" height="32"/>
+        <image name="phone-book-2.png" width="32" height="32"/>
+        <image name="phone-call.png" width="32" height="32"/>
+        <image name="BatopIconSize29.png" width="29" height="29"/>
+        <image name="BatopIconSize58.png" width="58" height="58"/>
+        <image name="BatopIconSize80.png" width="80" height="80"/>
+        <image name="BatopIconSize87.png" width="87" height="87"/>
+        <image name="BatopIconSize120.png" width="120" height="120"/>
+        <image name="BatopIconSize180.png" width="180" height="180"/>
+        <image name="BatopIconSize256.png" width="256" height="256"/>
+        <image name="topIconSize120.png" width="120" height="120"/>
+        <image name="op8.png" width="375" height="667"/>
+    </resources>
+</document>
